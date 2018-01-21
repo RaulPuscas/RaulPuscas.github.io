@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <title>Nutriție</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="code.js"></script>
+</head>
+
+<body onload="AddExpandCollapse()">
+    <header class="mainHeader">
+        <img class="imgHeader" src="nutrition.jpg" alt="Nutrition" />
+        <span class="pageTitle">Nutriție</span>
+        <nav>
+            <ul>
+                <li>
+                    <a href="firstPage.html">Acasă</a>
+                </li>
+                <li>
+                    <a href="imc.html">Indice masă corporală</a>
+                </li>
+                <li>
+                    <a href="bfp.html">Procent grăsime corporală</a>
+                </li>
+                <li>
+                    <a href="cn.html">Necesar caloric</a>
+                </li>
+                <li>
+                    <a href="nutrition.html" class="active">Nutriție</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="mainContent">
+        <article class="mainArticle">
+            <button class="accordion"> Nutriția
+                <img id="arrow" src="ExpandDown.png" alt="Expand/Collapse" style="width:30px; height:20px;">
+            </button>
+            <div class="expandablePanel">
+                <footer>
+                    <p class="info">Una din regulile principale pentru a avea o viață sănătoasă este nutriția.</p>
+                </footer>
+                <p>Nutriția înseamnî alimentația corectă a omului sănătos aflat în diferite perioade fiziologice și cu diferite
+                    tipuri de activitate in scopul păstrării stării de sănătate.</p>
+                <p>O nutriție bună este condiția sănătății. O alimentație inadecvată poate slăbi sistemul imunitar. Nutriția
+                    aduce corpului energia de care are nevoie pentru a-și menține buna funcționare, activitătile și greutatea.</p>
+                <p>Mâncăm în fiecare zi de cand ne-am născut, asta nu inseamnă neapărat a ne hrăni.Pentru a ne hrăni avem nevoie
+                    de nutrienți.</p>
+                <p>Când vorbim de nutriție vorbim de echilibru, vorbim de acceptarea și dorința de a avea un stil de viață sănătos,
+                    vorbim de alimente, nu de medicamente, vorbim de nutriție internă, celulară și externă.</p>
+                <P>Nutriția reprezintă aprovizionarea celulelor și a organismelor cu materialele necesare pentru a susține viața.
+                    Fara vitamine in corp nu există activitate.</P>
+                <P>Problemele de nutriție pot decurge dintr-o alimentație insuficientă sau din cauza faptului că organismul
+                    nu absoarbe sau absoarbe insuficient elementele nutritive prezente în alimentele consumate</P>
+            </div>
+        </article>
+    </div>
+    <form class="calculator">
+        Necesar caloric zilnic:
+        <input type="text" id="necesarCaloric">
+        <br/>
+        <table id="tableNutrition">
+            <tr id="rowHeader">
+                <td>Denumire</td>
+                <td>Grame</td>
+                <td>Calorii</td>
+            </tr>
+            <tr id="rowCarbo">
+                <td>Carbohidrați:</td>
+                <td id="carboG">Gr/Zi</td>
+                <td id="carboC">Cal/Zi</td>
+            </tr>
+            <tr id="rowProt">
+                <td>Proteine:</td>
+                <td id="protG">Gr/Zi</td>
+                <td id="protC">Cal/Zi</td>
+            </tr>
+            <tr id="rowFats">
+                <td>Grăsimi:</td>
+                <td id="fatsG">Gr/Zi</td>
+                <td id="fatsC">Cal/Zi</td>
+            </tr>
+        </table>
+        <br/>
+        <button onclick="calculeazaNutritie()" type="button" class="myButton">Calculează</button>
+    </form>
+    <footer class="mainFooter">
+        <p>
+            <a href="#" title="ToolTip">Contact: raull.puscas@gmail.com</a>
+        </p>
+    </footer>
+</body>
+
+</html>

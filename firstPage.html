@@ -1,0 +1,128 @@
+<DOCTYPE html>
+    <html lang="ro">
+
+    <head>
+        <title> Sănătate, alimentație și nutiție </title>
+        <meta charset="utf-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="code.js"></script>
+    </head>
+
+    <body onload="AddExpandCollapse()">
+        <header class="mainHeader">
+            <img src="logo.jpg" alt="Sport Image" class="imgHeader" />
+            <span class="pageTitle">Sănătate, nutriție, tu și despre tine!</span>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="firstPage.html" class="active">Acasă</a>
+                    </li>
+                    <li>
+                        <a href="imc.html">Indice masă corporală</a>
+                    </li>
+                    <li>
+                        <a href="bfp.html">Procent grăsime corporală</a>
+                    </li>
+                    <li>
+                        <a href="cn.html">Necesar caloric</a>
+                    </li>
+                    <li>
+                        <a href="nutrition.html">Nutriție</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="mainContent" onload="AddExpandCollapse2()">
+            <div class="contentFirstPage">
+                <article class="topContentFirstPage">
+                    <footer>
+                        <p class="info">Pierdere rapidă în greutate</p>
+                    </footer>
+                    <button class="accordion"> PIERDEREA RAPIDĂ ÎN GREUTATE: CUM SĂ O FACI ÎN SIGURANŢĂ
+                        <img id="arrow" src="ExpandDown.png" alt="Expand/Collapse" style="width:30px; height:20px;">
+                    </button>
+                    <div class="expandablePanel">
+                        <p>Cred că aţi auzit foarte des asta: dietele moft nu funcţionează când vine vorba de o scădere în greutate
+                            permanentă. Ok, dar ce facem în acele momente în care avem nevoie să slăbim într-un timp foarte
+                            scurt? De aceea e greu să treci peste „promisiunile” pe care le fac diete precum „Lemonade Diet”,
+                            dieta pe bază de supă de varză. Sau când citeşti cărţi de genul „Slăbeşte 9 kilograme în 21 de
+                            zile”. Mai ales când misiunea ta e să încapi într-o haină, o rochie pentru a te simţi bine la
+                            o petrecere , o reuniune sau un alt eveniment special din viaţa ta. Adevărul e că nu e nimic
+                            rău în asta – atât timp cât o faci corect şi în siguranţă. În teorie, o persoană ar putea pierde
+                            în greutate 9-10 kilograme într-o săptămână. Asta urmând un plan foarte ambiţios de hrănire şi
+                            exerciţiu fizic, dedicând mai mult de 7 ore pe săptămână de exerciţii fizice riguroase şi sub
+                            îndrumarea unui instructor.
+                        </p>
+                        <footer>
+                            <a href="https://cerasus.ro/pierderea-rapida-in-greutate/" title="Go to the original article" style="vertical-align:middle;">
+                                <input type="image" src="go.png" width="80px" height="40px">
+                            </a>
+                        </footer>
+                    </div>
+                </article>
+                <article class="bottomContentFirstPage">
+                    <footer>
+                        <p class="info">Te ajută să slăbeşti fără a-ţi pune în pericol sănătatea.
+                            <p>
+                    </footer>
+                    <button onclick="ExpandCollapse2()" class="accordion1" onclick="ExpandCollapse()"> DIETĂ ÎN SOMN: Cum să pierzi în greutate în timp ce dormi
+                        <img id="arrow1" src="ExpandDown.png" alt="Expand/Collapse" style="width:30px; height:20px;">
+                    </button>
+                    <div class="expandablePanel" name="panelTwo">
+                        <p>Numeroase diete îţi promit că slăbeşti repede dacă le urmezi o perioadă lungă de timp, însă cele
+                            mai multe dintre ele necesită sacrificii mari. Iată însă că există o dietă, creată de un medic
+                            de la un reputat spital din Statele Unite, Caroline Apovian, care te ajută să slăbeşti fără a-ţi
+                            pune în pericol sănătatea.</p>
+                        <p>Dieta creată de medicul Caroline Apovian, de la Boston Medical Centre, te ajută să slăbeşti peste
+                            3 kilograme în doar o săptămână, fără a scoate din meniu alimente precum cartofii şi pastele
+                            sau băuturile alcoolice, informează Daily Mail.</p>
+                        <p>Caroline Apovian a petrecut timp de 25 de ani pentru a crea această dietă - "Overnight Diet", care
+                            presupune consumul a trei cocktail-uri speciale într-o singură zi a săptămânii, în rest fiind
+                            permisă o alimentaţie sănătoasă.</p>
+                        <p>Medicul susţine că cei care urmează dieta slăbesc în jur de patru kilograme în prima săptămână, la
+                            fel fiind în fiecare săptămână ulterioară, un kilogram fiind pierdut în timpul somnului. În plus,
+                            persoanele care ţin dieta evită să experimenteze senzaţia de foame sau de pofte.</p>
+                        <p>Secretul dietei, respectiv motivul pentru care funcţionează atât de repede, este faptul că este creată
+                            special pentru a nu duce la pierderea masei musculare odată cu reducerea cantităţii de alimente.</p>
+                        <footer>
+                            <a href="http://www.mediafax.ro/stiinta-sanatate/dieta-in-somn-cum-sa-pierzi-in-greutate-in-timp-ce-dormi-10688295" title="Go to the original article"
+                                style="vertical-align:middle;">
+                                <input type="image" src="go.png" width="80px" height="40px">
+                            </a>
+                        </footer>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <section class="leftSection">
+            <h2>Bea mai multă apă!</h2>
+            <p>Nutriționistii au spus asta de atât de multe ori, dar asta pentru că metoda funcționează. Corpul nostru poate
+                să confunde deshidratarea cu foamea, așa că unul dintre cele mai ușoare moduri prin care iți poți reseta
+                apetitul este să te menții cât mai hidratat, spune Michelle Davenport pentru womenshealthmag.com.</p>
+        </section>
+        <section class="middleSection">
+            <h2>Nu mânca după ora 21.00</h2>
+            <p>Nu trebuie să cumperi alimente speciale sau să mergi la sala în fiecare zi. Trebuie doar să nu mai mănânci nimic
+                după ora 21.00. Gustările pe care le iei după cină de obicei sunt egale cu calorii in plus, deoarece șansele
+                sunt destul de mari ca tu să fi consumat suficiente calorii pentru acea zi, spune Keri Gans. Cel mai probabil,
+                tu mănânci doar din plictiseală, din cauza stresului sau din obișnuință.
+            </p>
+        </section>
+        <section class="rightSection">
+            <h2>Din când în când adu-ți aminte de cântar.</h2>
+            <p>Este bine ca după o anumită perioadă să vezi dacă dieta a dat randament. Sunt unele persoane care greșesc cântărindu-se
+                în fiecare săptămână, ceea ce poate accentua stresul.</p>
+            <p>Însă, dacă urmezi dieta și nu comiți nicio greșeală cântărindu-te după o anumită perioadă de vreme, nu ai cum
+                să vezi că acul cântarului scade.</p>
+        </section>
+        <footer class="mainFooter">
+            <p>
+                <a href="#" title="ToolTip">Contact: raull.puscas@gmail.com</a>
+            </p>
+        </footer>
+
+    </body>
+
+    </html>

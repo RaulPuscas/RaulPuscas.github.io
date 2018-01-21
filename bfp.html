@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+        <title>Procent grăsime corporală</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="code.js"></script>
+</head>
+
+<body onload="AddExpandCollapse()">
+        <header class="mainHeader">
+                <img class="imgHeader" src="bfp.jpg" alt="BFP" />
+                <span class="pageTitle">Calculator - Procent Grăsime Corporală</span>
+                <nav>
+                        <ul>
+                                <li>
+                                        <a href="firstPage.html">Acasă</a>
+                                </li>
+                                <li>
+                                        <a href="imc.html">Indice masă corporală</a>
+                                </li>
+                                <li>
+                                        <a href="bfp.html" class="active">Procent grăsime corporală</a>
+                                </li>
+                                <li>
+                                        <a href="cn.html">Necesar caloric</a>
+                                </li>
+                                <li>
+                                        <a href="nutrition.html">Nutriție</a>
+                                </li>
+                        </ul>
+                </nav>
+        </header>
+        <div class="mainContent">
+                <article class="mainArticle">
+                        <button class="accordion"> Procentul de grăsime corporală
+                                <img id="arrow" src="ExpandDown.png" alt="Expand/Collapse" style="width:30px; height:20px;">
+                        </button>
+                        <div class="expandablePanel">
+                                <footer>
+                                        <p class="info">Informații</p>
+                                </footer>
+                                <p>Tabelele de evaluare a greutăţii în funcţie de înălţime sunt utile pentru estimarea riscului
+                                        la nivel populaţional, dar nu sunt cel mai bun ghid pentru persoane individuale.
+                                        Oamenii au constituţii diferite. Astfel, doi oameni pot avea aceeaşi înălţime şi
+                                        greutate, dar cantitatea de grăsime din corpul fiecăruia să fie foarte diferită.
+                                        O persoană activă, musculoasă, poate avea chiar câteva kilograme în plus fără să
+                                        aibă prea multă grăsime în corp. La fel, o persoană sedentară poate să aibă greutatea
+                                        în limite normale, dar cantitatea de grăsime din corp să fie prea mare.</p>
+                                <p>O modalitate mai precisă şi individualizată de a determina greutatea ideală este un test
+                                        de evaluare a procentului de grăsime din organism. Acest test este adaptat formei
+                                        fizice şi constituţiei dvs.</p>
+                                <p>Măsurarea procentului de grăsime este, de asemenea, o cale mai bună de monitorizare a modificărilor
+                                        compoziţiei organismului care survin în urma exerciţiului fizic. Prin creşterea nivelului
+                                        de activitate fizică, masa musculară creşte, forma fizică se îmbunătăţeşte, iar cantitatea
+                                        de grăsime din corp scade. Aceste modificări extrem de benefice nu se reflectă întotdeauna
+                                        pe cifrele citite pe cântar şi mulţi se descurajează crezând că nu au făcut nici
+                                        un progres. În realitatea, cantitate de grăsime din corp a scăzut, iar locul ei a
+                                        fost luat de muşchi.</p>
+                        </div>
+                </article>
+        </div>
+        <form class="calculator">
+                Sex:
+                <br/>
+                <input type="radio" name="gender" id="masculin" checked> Masculin
+                <input type="radio" name="gender" id="feminin"> Feminin
+                <br/>Greutate(în kilograme):
+                <input type="text" id="greutate">
+                <br/>Înălțime( în centimetri):
+                <input type="text" id="inaltime">
+                <br/> Vârstă(în ani):
+                <input type="number" value="18" id="varsta" min="1" max="100">
+                <br/> Valoare indice:
+                <input type="text" class="value" name="valoare" style="background-color:#fff;
+                color:black; 
+                font-weight: bold;
+                font-size:1.5em;
+                width:30%;
+                border:none;
+                overflow:auto">
+                <br/>
+                <button onclick="calculeazaBFP()" type="button" class="myButton">Calculează</button>
+        </form>
+        <table class="tableResults">
+                <tbody style="background-color:#fff">
+                        <tr class="tableHeader">
+                                <td>Descriere</td>
+                                <td>Femei</td>
+                                <td>Bărbați</td>
+                        </tr>
+                        <tr style="color: #f60;">
+                                <td>Grăsime esențială</td>
+                                <td>10-13%</td>
+                                <td>2-5%</td>
+                        </tr>
+                        <tr style="background: #9c0;">
+                                <td>Atlet</td>
+                                <td>14-20%</td>
+                                <td>6-13%</td>
+                        </tr>
+                        <tr style="background: #fc9; color: #f63;">
+                                <td>Ideal</td>
+                                <td>21-24%</td>
+                                <td>14-17%</td>
+                        </tr>
+                        <tr style="background: #f96; color: #fff;">
+                                <td>Normal</td>
+                                <td>25-31%</td>
+                                <td>18-24%</td>
+                        </tr>
+                        <tr style="background: #f63; color: #fff;">
+                                <td>Obez</td>
+                                <td>32% +</td>
+                                <td>25% +</td>
+                        </tr>
+                </tbody>
+        </table>
+        <footer class="mainFooter">
+                <p>
+                        <a href="#" title="ToolTip">Contact: raull.puscas@gmail.com</a>
+                </p>
+        </footer>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+        <title>Calculator IMC</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="code.js"></script>
+</head>
+
+<body onload="AddExpandCollapse()">
+        <header class="mainHeader">
+                <img class="imgHeader" src="imcValues.jpg" alt="IMC Values" />
+                <span class="pageTitle">Calculator - Indice Masă Corporală</span>
+                <nav>
+                        <ul>
+                                <li>
+                                        <a href="firstPage.html">Acasă</a>
+                                </li>
+                                <li>
+                                        <a href="imc.html" class="active">Indice masă corporală</a>
+                                </li>
+                                <li>
+                                        <a href="bfp.html">Procent grăsime corporală</a>
+                                </li>
+                                <li>
+                                        <a href="cn.html">Necesar caloric</a>
+                                </li>
+                                <li>
+                                        <a href="nutrition.html">Nutriție</a>
+                                </li>
+                        </ul>
+                </nav>
+        </header>
+        <div class="mainContent">
+                <article class="mainArticle">
+                        <button class="accordion"> Indicele de masă corporală
+                                <img id="arrow" src="ExpandDown.png" alt="Expand/Collapse" style="width:30px; height:20px;">
+                        </button>
+                        <div class="expandablePanel">
+                                <footer>
+                                        <p class="info">Informații</p>
+                                </footer>
+                                <p>Indicele de masă corporală - IMC - este un indicator oficial de calculare a greutății corporale
+                                        ideale, pentru o înălțime data. În primul rând, indicele de masă corporală ajută
+                                        la stabilirea grupei de greutate in care se incadrează o persoană - gradul de obezitate.
+                                        De asemenea, indicele de masă corporală poate fi folosit pentru calcularea numărului
+                                        de kilograme pe care o persoană trebuie să le piardă sau să le câștige, pentru a
+                                        ajunge la greutatea ideală, pentru înăltimea sa.</p>
+                                <p>Indicele de masă corporală este o metodă care poate fi folosită atât de bărbați căt și de
+                                        femei, cu vârsta cuprinsî între 18 și 65 ani. Indicele de masă corporală nu este
+                                        o metodă de calcul a greutății potrivită pentru copii, femei insărcinate, persoane
+                                        cu masa musculară mare (sportivi) și vârstnici și nu este menită stabilirii procentului
+                                        de grăsime corporală, a masei musculare sau osoase.</p>
+                        </div>
+                </article>
+        </div>
+        <form class="calculator">
+                Greutate(în kilograme):
+                <input type="text" id="greutate">
+                <br/> Înălțime( în centimetri):
+                <input type="text" id="inaltime">
+                <br/> Valoare indice:
+                <input type="text" class="value" name="valoare" style="background-color:#fff;
+                color:black; 
+                font-weight: bold;
+                font-size:1.5em;
+                width:30%;
+                border:none;
+                overflow:auto">
+                <br/>
+                <button onclick="calculeazaIMC()" type="button" class="myButton">Calculează</button>
+        </form>
+        <table class="tableResults">
+                <tbody style="background-color:#fff">
+                        <tr class="tableHeader">
+                                <td>Indicele de masă corporală</td>
+                                <td>Interpretare rezultat</td>
+                                <td>Risc de boală</td>
+                        </tr>
+                        <tr style="color: #f60;">
+                                <td>18,49 sau mai puțin</td>
+                                <td>Subponderal</td>
+                                <td>
+                                        <span>√</span>
+                                </td>
+                        </tr>
+                        <tr style="background: #9c0;">
+                                <td>între 18,50 și 24,99</td>
+                                <td>Greutate normală</td>
+                                <td>Fără risc de boală</td>
+                        </tr>
+                        <tr style="background: #fc9; color: #f63;">
+                                <td>între 25,00 și 29,99</td>
+                                <td>Supraponderal</td>
+                                <td>
+                                        <span>√</span>
+                                </td>
+                        </tr>
+                        <tr style="background: #f96; color: #fff;">
+                                <td>între 30,00 și 34,99</td>
+                                <td>Obezitate (gradul I)</td>
+                                <td>
+                                        <span>√</span>
+                                </td>
+                        </tr>
+                        <tr style="background: #f63; color: #fff;">
+                                <td>între 35,00 și 39,99</td>
+                                <td>Obezitate (gradul II)</td>
+                                <td>
+                                        <span>√</span>
+                                </td>
+                        </tr>
+                        <tr style="background: #c33; color: #fff;">
+                                <td>40,00 sau mai mult</td>
+                                <td>Obezitate morbidă</td>
+                                <td>
+                                        <span>√</span>
+                                </td>
+                        </tr>
+                </tbody>
+        </table>
+        <img class="graphic" src="imgGraphic.jpg" alt="IMC Graphic" />
+        <footer class="mainFooter">
+                <p>
+                        <a href="#" title="ToolTip">Contact: raull.puscas@gmail.com</a>
+                </p>
+        </footer>
+</body>
+
+</html>

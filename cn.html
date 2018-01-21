@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <title>Necesar Caloric</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="code.js"></script>
+</head>
+
+<body onload="AddExpandCollapse()">
+    <header class="mainHeader">
+        <img class="imgHeader" src="calories.jpg" alt="Calories" />
+        <span class="pageTitle">Calculator - Necesar Caloric</span>
+        <nav>
+            <ul>
+                <li>
+                    <a href="firstPage.html">Acasă</a>
+                </li>
+                <li>
+                    <a href="imc.html">Indice masă corporală</a>
+                </li>
+                <li>
+                    <a href="bfp.html">Procent grăsime corporală</a>
+                </li>
+                <li>
+                    <a href="cn.html" class="active">Necesar caloric</a>
+                </li>
+                <li>
+                    <a href="nutrition.html">Nutriție</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="mainContent">
+        <article class="mainArticle">
+            <button class="accordion"> Necesarul caloric
+                <img id="arrow" src="ExpandDown.png" alt="Expand/Collapse" style="width:30px; height:20px;">
+            </button>
+            <div class="expandablePanel">
+                <footer>
+                    <p class="info">Informații</p>
+                </footer>
+                <p>Caloria este o unitate de măsură a energiei. Corpul are nevoie de calorii pentru a funcționa. Aportul zilnic
+                    necesar de calorii diferă în funcție de vârstă, greutate și gen.</p>
+                <p>Caloriile nu sunt dăunătoare. Corpul este dependent de calorii pentru a avea energie. Secretul constă în
+                    consumarea unui anumit număr de calorii zilnic. Dacă mănânci prea multe calorii, trebuie să faci destul
+                    efort pentru a le arde, altfel nu vei câștiga decât kilograme în plus.</p>
+                <p>Majoritatea mâncărurilor și băuturilor conțin calorii. Unele alimente, precum salata, au un număr foarte
+                    mic de calorii. (o cană de salată verde tocată are mai puțin de 10 calorii). Altele, precum alunele,
+                    conțin foarte multe calorii. (o jumătate de cană de alune conține 427 de calorii).</p>
+                <p>Cea mai sigură metodă de a afla câte calorii avem nevoie (și voie!) să consumăm, ținând cont de anumite variabile
+                    și în funcție dacă vrem să ne menținem greutatea, să slăbim sau să ne îngrășăm, este folosirea unui calculator
+                    de calorii.</p>
+            </div>
+        </article>
+    </div>
+    <form class="calculator">
+        Sex:
+        <br/>
+        <input type="radio" name="gender" id="masculin" checked> Masculin
+        <input type="radio" name="gender" id="feminin"> Feminin
+        <br/> Greutate(în kilograme):
+        <input type="text" id="greutate">
+        <br/> Înălțime( în centimetri):
+        <input type="text" id="inaltime">
+        <br/> Vârstă(în ani):
+        <input type="number" value="18" id="varsta" min="18" max="100">
+        <br/> Nivel activitate:
+        <select name="Nivel Activitate" id="activity">
+            <option value="sedentar">Sedentar</option>
+            <option value="usor" selected="selected">Activitate foarte ușoară</option>
+            <option value="moderat">Activitate moderată</option>
+            <option value="intens">Activitate intensă</option>
+            <option value="foarteintens">Activitate foarte intensă</option>
+        </select>
+        <br/> Necesar caloric:
+        <input type="text" class="value" name="valoare" style="background-color:#fff;
+        color:black; 
+        font-weight: bold;
+        font-size:1.5em;
+        width:30%;
+        border:none;
+        overflow:auto">
+        <br/>
+        <button onclick="calculeazaCN()" type="button" class="myButton">Calculează</button>
+    </form>
+    <footer class="mainFooter">
+        <p>
+            <a href="#" title="ToolTip">Contact: raull.puscas@gmail.com</a>
+        </p>
+    </footer>
+</body>
+
+</html>
